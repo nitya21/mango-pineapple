@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Banker{
+public class Banker{
 int max[][]=new int[10][10];
 int alloc[][]=new int[10][10];
 int avail[][]=new int[10][10];
@@ -8,7 +8,7 @@ int need[][]=new int[10][10];
 
 int p,r,flag;
 public static void main(String args[]){
-
+Banker obj=new Banker();
 Scanner sc=new Scanner(System.in);
 System.out.println("enter number of processes/n");
 p=sc.nextInt();
@@ -18,20 +18,20 @@ System.out.println("enter the max matrix/n");
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
 	{
-		max[i][j]=Integer.parseInt(sc.nextInt());
+		max[i][j]=sc.nextInt();
 	}
 }
 System.out.println("enter the alloc matrix/n");
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
 	{
-		alloc[i][j]=Integer.parseInt(sc.nextInt());
+		alloc[i][j]=sc.nextInt();
 	}
 }
 System.out.println("enter the alloc matrix/n");
 	for(int j=0;j<r;j++)
 	{
-		avail[0][j]=Integer.parseInt(sc.nextInt());
+		avail[0][j]=sc.nextInt();
 	}
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
@@ -39,6 +39,9 @@ for(int i=0;i<p;i++){
 		need[i][j]=max[i][j]-alloc[i][j];
 	}
 }
+obj.algo();
+}
+public void algo(){
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
 	{
@@ -67,5 +70,6 @@ for(int i=0;i<p;i++){
 		}
 	}
 }
+
 }
 }
