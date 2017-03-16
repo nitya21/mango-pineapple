@@ -1,3 +1,5 @@
+package nsf;
+
 import java.util.*;
 
 public class Banker {
@@ -20,18 +22,18 @@ public class Banker {
 		System.out.println("enter the max matrix/n");
 		for (int i = 0; i < p; i++) {
 			for (int j = 0; j < r; j++) {
-				max[i][j] = Integer.parseInt(null, sc.nextInt());
+				max[i][j] = sc.nextInt();
 			}
 		}
 		System.out.println("enter the alloc matrix/n");
 		for (int i = 0; i < p; i++) {
 			for (int j = 0; j < r; j++) {
-				alloc[i][j] = Integer.parseInt(null, sc.nextInt());
+				alloc[i][j] = sc.nextInt();
 			}
 		}
 		System.out.println("enter the alloc matrix/n");
 		for (int j = 0; j < r; j++) {
-			avail[0][j] = Integer.parseInt(null, sc.nextInt());
+			avail[0][j] = sc.nextInt();
 		}
 		for (int i = 0; i < p; i++) {
 			for (int j = 0; j < r; j++) {
