@@ -18,20 +18,20 @@ System.out.println("enter the max matrix/n");
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
 	{
-		max[i][j]=Integer.parseInt(obj.readLine());
+		max[i][j]=Integer.parseInt(sc.nextInt());
 	}
 }
 System.out.println("enter the alloc matrix/n");
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
 	{
-		alloc[i][j]=Integer.parseInt(obj.readLine());
+		alloc[i][j]=Integer.parseInt(sc.nextInt());
 	}
 }
 System.out.println("enter the alloc matrix/n");
 	for(int j=0;j<r;j++)
 	{
-		avail[0][j]=Integer.parseInt(obj.readLine());
+		avail[0][j]=Integer.parseInt(sc.nextInt());
 	}
 for(int i=0;i<p;i++){
 	for(int j=0;j<r;j++)
